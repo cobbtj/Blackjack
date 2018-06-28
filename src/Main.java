@@ -18,10 +18,18 @@ class Main {
         double pTotal = pCard1 + pCard2;
         double cTotal = cCard1 + cCard2;
         int money = b.getMoney();
+        if(b.getMoney() == 0){
+            System.out.println("You have run out of money!");
+            System.exit(0);
+        }
 
         System.out.println("##Welcome to Black Jack!##");
-        System.out.println("Your current money is: " + money + " How much would you like to bet on this game?");
+        System.out.println("Your current money is: " + b.getMoney() + " How much would you like to bet on this game?");
         int wager = b.setWager(sc.nextInt());
+        if(wager > money){
+            System.out.println("You don't have that much to bet.");
+            run();
+        }
         System.out.println("Dealing................");
         System.out.println("You are dealt two cards");
         System.out.println("Your first card has a value of: " + (int)pCard1);

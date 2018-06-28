@@ -17,6 +17,10 @@ class Play extends Main{
             if (playAgain == 1) {
                 run();
             }
+            else{
+                System.out.println("Thanks for playing!");
+                System.exit(0);
+            }
         }
 
 
@@ -41,6 +45,10 @@ class Play extends Main{
                     if (playAgain == 1) {
                         run();
                     }
+                    else{
+                        System.out.println("Thanks for playing!");
+                        System.exit(0);
+                    }
                 } else {
                     if (pTotal > cTotal) {
                         System.out.println("Your total was: " + (int)pTotal + " The computer's total was: " + (int)cTotal);
@@ -51,6 +59,10 @@ class Play extends Main{
                         if (playAgain == 1) {
                             run();
                         }
+                        else{
+                            System.out.println("Thanks for playing!");
+                            System.exit(0);
+                        }
                     } else if (cTotal > pTotal) {
                         System.out.println("Your total was: " + (int)pTotal + " The computer's total was: " + (int)cTotal);
                         b.setMoney(b.getMoney() - b.getWager());
@@ -59,6 +71,10 @@ class Play extends Main{
                         playAgain = sc.nextInt();
                         if (playAgain == 1) {
                             run();
+                        }
+                        else{
+                            System.out.println("Thanks for playing!");
+                            System.exit(0);
                         }
                     }
                     else {
@@ -69,6 +85,11 @@ class Play extends Main{
                         playAgain = sc.nextInt();
                         if (playAgain == 1) {
                             run();
+                            System.exit(0);
+                        }
+                        else{
+                            System.out.println("Thanks for playing!");
+                            System.exit(0);
                         }
                     }
                 }
