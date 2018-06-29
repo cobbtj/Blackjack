@@ -1,4 +1,4 @@
-public class Betting extends Main {
+class Betting extends Main {
     private static int money;
     private static int wager;
 
@@ -12,12 +12,12 @@ public class Betting extends Main {
     }
 
     public int setMoney(int money) {
-        this.money = money;
+        Betting.money = money;
         return money;
     }
 
     public int setWager(int wager) {
-        this.wager = wager;
+        Betting.wager = wager;
         return wager;
     }
 
